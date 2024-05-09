@@ -20,14 +20,10 @@ const pastrySchema = new mongoose.Schema({
         required: true
     },
     
-    createdAt: {
-        type: Date,
-        default: Date.now
-    }
+   
 });
 
 // Create the pastry model
-const Pastry = mongoose.model('Pastry', pastrySchema);
+module.exports = mongoose.model("Pastry", pastrySchema);
 
-// Export the model for use in other files
-module.exports = Pastry;
+
