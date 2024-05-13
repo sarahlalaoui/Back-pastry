@@ -4,18 +4,14 @@ const mongoose = require('mongoose');
 
 // Define the schema for the pastry model
 const pastrySchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    description: {
+    productname: {
         type: String,
         required: true
     },
     image: {
         type: String,
     },
-    price: {
+    prix: {
         type: Number,
         required: true
     },
